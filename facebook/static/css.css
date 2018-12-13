@@ -1,0 +1,201 @@
+
+
+<style>
+
+    *{
+        box-sizing : border-box;
+        margin : 0;
+        padding : 0;
+    }
+    body { background-color: #d7d8dc; }
+    .header {
+        background-color : #475d9f;
+        color : #fff;
+        border-bottom : 1px solid #2c3863;
+        height : 42px;
+        top : 0px;
+    }
+    .btn1 {
+        position : absolute;
+        left : 0px;
+    }
+    .search {
+        position : absolute;
+        left : 50px;
+        right : 50px;
+
+    }
+    .searchbar {
+        border : 1px solid #2c3863;
+        background-color : #323f6b;
+        width : 100%;
+        border-radius : 4px;
+        padding : 6px;
+        margin-top : 7px;
+        color : #ffffff;
+
+    }
+    .btn2 {
+        position : absolute;
+        right : 0px;
+    }
+    .container {
+        background-color : #d7d8dc;
+    }
+    .footer {
+        border-top : 1px solid #cccccc;
+        background-color : #fafafa;
+        height : 50px;
+        text-align : center;
+        position : fixed;
+        bottom : 0;
+        left : 0;
+        right : 0;
+    }
+
+    .tab1 {
+        float : left;
+        width : 25%;
+    }
+    .tab2 {
+        float : left;
+        width : 25%;
+    }
+    .tab3 {
+        float : left;
+        width : 25%;
+    }
+    .tab4 {
+        float : left;
+        width : 25%;
+    }
+
+    .feed {
+        background-color : #ffffff;
+        border-top : 1px solid #c0c0c0;
+        border-bottom : 1px solid #c0c0c0;
+        margin : 7px 0 0 0;
+        padding : 12px;
+    }
+    .date {
+        color : #999;
+        margin-bottom:10px;
+    }
+    .title {
+        color : #6184dd;
+        font-weight : 600;
+    }
+    .content {
+        margin-top : 5px;
+    }
+    .accessory {
+        border-top : 1px solid #eee;
+        padding-top : 10px;
+        margin-top : 10px;
+        color : #999;
+        font-size : 14px;
+    }
+
+    .more {
+        font-size : 14px;
+        color : #6184dddd;
+    }
+
+    a{
+        color : inherit;
+        text-decoration : none;
+    }
+
+    /* Form */
+
+    .form_box {
+        background-color : #ffffff;
+        margin : 10px;
+        border-radius : 4px;
+        border : 1px solid #ddd;
+        padding : 10px ;
+    }
+
+    .input_field {
+        border : 1px solid #ddd;
+        border-radius : 4px;
+        padding : 4px;
+        margin : 3px 0;
+        font-size : 14px;
+        width : 100%;
+    }
+    .textarea_field {
+        border : 1px solid #ddd;
+        border-radius : 4px;
+        padding : 4px;
+        margin: 3px 0;
+        font-size : 14px;
+        width : 100%;
+        height : 160 px;
+    }
+    .write_button {
+        background-color : #475d9f;
+        border : 1px solid #323f6b;
+        color : #ffffff;
+        border-radius : 4px;
+        padding : 2px 8px;
+        font-size : 18px;
+    }
+
+    /* comment */
+    .comment_list {
+        background-color : #f0f1f4;
+        border-bottom : 1px solid #bcbdc3;
+        padding-top : 0.1px;
+    }
+
+    .comment {
+        background-color : #fff;
+        border-radius : 30px;
+        margin : 15px;
+        padding : 15px;
+        margin-bottom : 0;
+    }
+
+    .comment__date {
+        margin : 0 15px;
+        padding : 8px 15px;
+        padding-bottom : 0px;
+        font-size : 13px;
+    }
+
+    .name {
+        font-weight : bold;
+        color : #445994;
+    }
+
+    .form-wrapper {
+        padding : 15px;
+    }
+
+    .form-wrapper input,
+    .form-wrapper textarea {
+        border : 1px solid #ddd;
+        width : 100%;
+        padding : 5px;
+        font-size : 14px;
+        box-sizing : border-box;
+        border-radius : 5px;
+        margin-top: 2px;
+        margin-bottom : 5px;
+    }
+
+    button {
+        border : 1px solid #405ea3;
+        background-color : #4967ad;
+        color : #fff;
+        font-weight : 500;
+        font-size : 15px;
+        padding : 3px 16px;
+        border-radius : 2px;
+    }
+
+
+
+
+</style>

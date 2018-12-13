@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Title</title>
+</head>
+<body>
+    play2
+    {{ name }} <br>
+    {{ count }}번째 방문자입니다. <br>
+    {{ status }}입니다. <br>
+
+    <ol>
+        {% for item in diary %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>

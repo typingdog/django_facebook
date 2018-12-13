@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title> 자세히 보기  </title>
+    <link rel="stylesheet" type="text/css" href="/static/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="btn1">
+            <a href="/fakebook/new/">
+            <img src="/static/ic_pencil.jpg" width="22px" style="margin:9px 0 0 13px;">
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" class="searchbar" placeholder="Search">
+        </div>
+        <div class="btn2"><img src="/static/ic_info.jpg" width="22px" style="margin:9px 13px 0 0"></div>
+    </div>
+
+    <div class="container">
+        <div class="form_box">
+            <form method="POST">
+                {% csrf_token %}
+                <h3>{{ article.title }} - 글 수정하기</h3>
+                <input class="input_field" type="text" name="author" value="{{ article.author }}"><br>
+                <input class="input_field" type="password" name="password" placeholder="글 비밀번호"><br>
+                <input class="input_field" type="text" name="title" value="{{ article.title }}"><br>
+                <textarea class="textarea_field" name="content" >{{ article.text }}</textarea><br>
+                <button class="write_button">게시</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="tab1"><a href="/fakebook/newsfeed/"><img src="/static/ic_feed.jpg" width="22px" style="margin-top :15px;"></a></div>
+        <div class="tab2"><img src="/static/ic_person.jpg" width="20px" style="margin-top : 14px;"></div>
+        <div class="tab3"><img src="/static/ic_globe.jpg" width="20px" style="margin-top : 14px;"></div>
+        <div class="tab4"><img src="/static/ic_etc.jpg" width="20px" style="margin-top : 14px;"></div>
+    </div>
+</body>
+
+</html>
