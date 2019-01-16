@@ -16,6 +16,10 @@
             color: #fff;
             height: 42px;
             border-bottom: 1px solid #2c3863;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
         }
         .btn1 {
             position: absolute;
@@ -40,6 +44,8 @@
         }
         .container {
             background-color: #d7d8dc;
+            padding-bottom: 50px;
+            padding-top : 42px;
         }
         .footer {
             border-top: 1px solid #cccccc;
@@ -118,10 +124,9 @@
                 {% endif %}
                 <div class="accessory">
                     <img src="/static/ic_like.jpg" width="16px"> Like
-                    <a href="/feed/{{acticle.pk}}">
+                    <a href="/feed/{{ article.pk }}/">
                     <img src="/static/ic_comment.jpg" width="16px"> Comments
                         </a>
-                </div>
                 </div>
             </div>
             {% endfor %}

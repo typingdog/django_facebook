@@ -27,7 +27,7 @@ def profile(request):
     return render(request, 'profile.html')
 
 def newsfeed(request):
-    articles = Article.objects.all()
+    articles = Article.objects.all().order_by('-created_at')
 
     for article in articles:
         article.length = len(article.text)
